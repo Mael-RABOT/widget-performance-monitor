@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Oxanium", sans-serif;
+}
+
+.monitor-container {
+  font-family: "Oxanium", monospace;
+  color: #00ff41;
+}
+
+.monitor-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.monitor-icon {
+  color: #00ff41;
+  transform: translateY(-1px);
+  flex-shrink: 0;
+}
+
+.monitor-title {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.monitor-value {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}

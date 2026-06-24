@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "widget-template",
+  "productName": "Performance Monitor Widget",
   "version": "0.1.0",
-  "identifier": "com.mrabot.widget-template",
+  "identifier": "com.mrabot.performance-monitor-widget",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -13,9 +13,11 @@
     "windows": [
       {
         "label": "main",
-        "title": "widget-template",
-        "width": 400,
-        "height": 300,
+        "title": "Performance Monitor Widget",
+        "width": 300,
+        "height": 100,
+        "x": 10,
+        "y": 160,
 
         "resizable": false,
         "decorations": false,

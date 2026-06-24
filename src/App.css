@@ -16,24 +16,77 @@ body {
   font-family: var(--font);
 }
 
+/* outer window */
 .widget {
-  width: 220px;
-  height: 120px;
+  position: relative;
+  box-sizing: border-box;
 
-  background: var(--bg);
+  background: #141414;
 
-  border-radius: var(--radius);
+  background-size: 20px 20px;
+
+  border: 1px solid #00ff41;
+  border-radius: 0px;
+
+  color: #00ff41;
+  overflow: hidden;
+
+  box-shadow:
+    0 0 10px rgba(0,255,65,0.5),
+    inset 0 0 20px rgba(0,255,65,0.08);
+}
+
+
+/* fake title bar */
+.widget-header {
+  height: 28px;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  color: var(--accent);
+  padding: 0 12px;
 
-  font-size: 18px;
-  font-weight: 600;
+  font-family: "Oxanium", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
 
-  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,255,65,0.5);
 
-  user-select: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,255,65,0.15),
+      transparent
+    );
+}
+
+
+/* content area */
+.widget-frame {
+  padding: 14px;
+}
+
+
+/* online indicator */
+.status-dot {
+  font-size: 10px;
+  color: #00ff41;
+}
+
+.status-dot::first-letter {
+  text-shadow:
+    0 0 8px #00ff41;
+}
+
+
+/* corner decorations */
+.widget-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+
+  border-color: #00ff41;
+  border-style: solid;
 }
